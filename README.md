@@ -1,0 +1,1 @@
+# curriculum_7_shin_kanda
