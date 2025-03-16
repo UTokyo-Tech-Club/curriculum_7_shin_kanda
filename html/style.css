@@ -1,0 +1,16 @@
+/*赤い円*/
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%; /* 円形にする */
+}
+
+/*画面中央に配置*/
+html,body{
+  height: 100%;
+  margin: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
