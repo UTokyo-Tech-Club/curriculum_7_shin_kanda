@@ -1,14 +1,20 @@
-import './App.css';
-//import { GreetJS } from './GreetJS'
-import { GreetTS } from './GreetTS' //GreetTSコンポーネントをインポート
+import React from "react";
+import Form from "./Form";
+import logo from "./logo.svg";
+import "./App.css";
 
-function App() {
-
+const App = () => {
+  // handleSubmitを定義（name, email を受け取る）
+  const handleSubmit = (name:string, email:string) => {
+    console.log("onSubmit:", name, email);
+  };
+  
   return (
     <div>
-      <GreetTS/> //GreetTSコンポーネントに置き換えた
+      <h1>My React App</h1>
+      <Form onSubmit={handleSubmit} />
     </div>
   );
-}
+};
 
 export default App;
