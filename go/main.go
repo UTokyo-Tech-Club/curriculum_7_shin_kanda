@@ -30,7 +30,7 @@ func countCardCombinations(a []int, s int) int {
 	dp := make([]int, s+1)
 	dp[0] = 1
 	for _, num := range a {
-		for i := num; i >= s; i-- {
+		for i := s; i >= num; i-- {
 			dp[i] += dp[i-num]
 		}
 	}
