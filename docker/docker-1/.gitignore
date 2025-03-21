@@ -1,0 +1,22 @@
+# Macの不要なシステムファイル
+.DS_Store
+
+# Vimの設定ファイル（不要なら）
+.vimrc
+
+# 余計なリポジトリが含まれないようにする
+zenn-book-challenges/
+my-app-ts-2/
+react-ts/
+
+# HTML関連の不要なファイル
+html/.DS_Store
+
+# Docker関連
+docker/.DS_Store
+
+# キャッシュファイル
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
