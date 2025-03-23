@@ -1,27 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from "react";
+import Form from "./Form";
+import logo from "./logo.svg";
+import "./App.css";
+
+const App = () => {
+  // handleSubmitを定義（name, email を受け取る）
+  const handleSubmit = (name, email) => {
+    console.log("onSubmit:", name, email);
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button>Button</button>
-        <button onClick={() => console.log('push')}>Button</button>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>My React App</h1>
+      <Form onSubmit={handleSubmit} />
     </div>
   );
-}
+};
 
 export default App;
+
