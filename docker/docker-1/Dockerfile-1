@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+
+RUN cat os9.txt> /os9.txt &&\
+    mkdir /obento && \
+    echo "ume" > /obento/onigiri.txt
+
+CMD cat /obento/onigiri.txt
