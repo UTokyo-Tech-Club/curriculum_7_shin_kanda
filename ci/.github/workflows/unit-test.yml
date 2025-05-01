@@ -17,6 +17,11 @@ on:
       - 'ut/go.mod'
       - 'ut/go.sum'
 
+# 必要な権限を設定
+permissions:
+  contents: read
+  pull-requests: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -26,6 +31,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Set up Go
       uses: actions/setup-go@v4
