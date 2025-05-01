@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03d11a20-db65-4bf4-a615-a7af8e230781" name="変更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2vkJsgEZ3ojw1bm3dgUBqtSOvBR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Go テスト.TestFizzBuzz (main_test.go 内) (1).executor": "Run",
+    "Go テスト.TestFizzBuzz (main_test.go 内).executor": "Run",
+    "Go テスト.TestFizzBuzz/1~20の値でFizzBUzzテスト (main_test.go 内) (1).executor": "Run",
+    "Go テスト.TestFizzBuzz/1~20の値でFizzBUzzテスト (main_test.go 内).executor": "Run",
+    "Go テスト.go test fizzbuzz.executor": "Run",
+    "Go テスト.go test ut.executor": "Run",
+    "Go テスト.main_test.go (1).executor": "Run",
+    "Go テスト.main_test.go.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "ut",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/shin/curriculum_7_shin_kanda/ut",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RunManager" selected="Go テスト.go test ut">
+    <configuration name="TestFizzBuzz (main_test.go 内) (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ut" />
+      <working_directory value="$PROJECT_DIR$/fizzbuzz" />
+      <root_directory value="$PROJECT_DIR$/.." />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/fizzbuzz/main_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestFizzBuzz\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestFizzBuzz/1~20の値でFizzBUzzテスト (main_test.go 内) (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ut" />
+      <working_directory value="$PROJECT_DIR$/fizzbuzz" />
+      <root_directory value="$PROJECT_DIR$/.." />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/fizzbuzz/main_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestFizzBuzz\E$/^\Q1~20の値でFizzBUzzテスト\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test fizzbuzz" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ut" />
+      <working_directory value="$PROJECT_DIR$/fizzbuzz" />
+      <root_directory value="$PROJECT_DIR$/.." />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$/fizzbuzz" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test ut" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ut" />
+      <working_directory value="$PROJECT_DIR$" />
+      <root_directory value="$PROJECT_DIR$/.." />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="ut" />
+      <working_directory value="$PROJECT_DIR$/fizzbuzz" />
+      <root_directory value="$PROJECT_DIR$/.." />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/fizzbuzz/main_test.go" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go テスト.go test ut" />
+        <item itemvalue="Go テスト.go test fizzbuzz" />
+        <item itemvalue="Go テスト.TestFizzBuzz (main_test.go 内) (1)" />
+        <item itemvalue="Go テスト.main_test.go (1)" />
+        <item itemvalue="Go テスト.TestFizzBuzz/1~20の値でFizzBUzzテスト (main_test.go 内) (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.26053.20" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-GO-243.26053.20" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>
