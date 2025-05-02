@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 )
 
@@ -11,7 +12,8 @@ func FizzBuzz(numbers []int) []string {
 	result := make([]string, 0, len(numbers))
 
 	for _, n := range numbers {
-		switch {
+		switch { // if文を使って記述しても良い
+		//write isFizzBuzz
 		case n > 0:
 			switch {
 			case isFizzBuzz(n):
@@ -34,4 +36,10 @@ func FizzBuzz(numbers []int) []string {
 func isFizz(n int) bool                    { return n%3 == 0 }
 func isBuzz(n int) bool                    { return n%5 == 0 }
 func appendNum(s []string, n int) []string { return append(s, strconv.Itoa(n)) }
-func isFizzBuzz(n int) bool                { return n%3 == 0 && n%5 == 0 }
+
+// write isFizzBuzz
+func isFizzBuzz(n int) bool { return n%3 == 0 && n%5 == 0 }
+func main() {
+	ret := FizzBuzz([]int{-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20})
+	fmt.Printf("%v", ret)
+}
