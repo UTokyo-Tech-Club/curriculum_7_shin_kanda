@@ -7,15 +7,15 @@ on:
   push:
     branches: [ "**" ]
     paths:
-      - 'ut/**/*.go'
-      - 'ut/go.mod'
-      - 'ut/go.sum'
+      - 'ci/ut/**/*.go'
+      - 'ci/ut/go.mod'
+      - 'ci/ut/go.sum'
   pull_request:
     branches: [ "**" ]
     paths:
-      - 'ut/**/*.go'
-      - 'ut/go.mod'
-      - 'ut/go.sum'
+      - 'ci/ut/**/*.go'
+      - 'ci/ut/go.mod'
+      - 'ci/ut/go.sum'
 
 # 必要な権限を設定
 permissions:
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ut
+        working-directory: ci/ut
 
     steps:
     - uses: actions/checkout@v4
@@ -35,11 +35,15 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v4
       with:
-        go-version: '1.20'
-        cache-dependency-path: ut/go.mod
+        go-version: '1.21'
+        cache-dependency-path: ci/ut/go.mod
 
     - name: Build
-      run: go build -v ./...
+      run: |
+        cd cmd/fizzbuzz
+        go build -v ./...
 
     - name: Test
-      run: go test -v ./...
+      run: |
+        cd pkg/fizzbuzz
+        go test -v ./...
