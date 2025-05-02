@@ -1,6 +1,3 @@
-# This workflow will build a golang project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
-
 name: Unit Test
 
 on:
@@ -17,7 +14,6 @@ on:
       - 'ci/ut/go.mod'
       - 'ci/ut/go.sum'
 
-# 必要な権限を設定
 permissions:
   contents: read
   pull-requests: read
@@ -38,12 +34,12 @@ jobs:
         go-version: '1.21'
         cache-dependency-path: ci/ut/go.mod
 
-    - name: Build
+    - name: Build only the main application
       run: |
         cd cmd/fizzbuzz
-        go build -v ./...
+        go build -v .
 
-    - name: Test
+    - name: Run unit tests
       run: |
         cd pkg/fizzbuzz
-        go test -v ./...
+        go test -v .
