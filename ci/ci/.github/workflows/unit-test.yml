@@ -1,0 +1,45 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: Unit Test
+
+on:
+  push:
+    branches: [ "**" ]
+    paths:
+      - 'ci/ut/**/*.go'
+      - 'ci/ut/go.mod'
+      - 'ci/ut/go.sum'
+  pull_request:
+    branches: [ "**" ]
+    paths:
+      - 'ci/ut/**/*.go'
+      - 'ci/ut/go.mod'
+      - 'ci/ut/go.sum'
+
+# 必要な権限を設定
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ci/ut
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.21'
+        cache-dependency-path: ci/ut/go.mod
+
+    - name: Build
+      run: go build -v ./...
+
+    - name: Test
+      run: go test -v ./... 
