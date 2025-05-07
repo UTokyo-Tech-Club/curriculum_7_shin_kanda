@@ -63,7 +63,7 @@ function App() {
       <div className="container mx-auto px-4 py-6">
         {/* フォーム部分 */}
         <div className="mb-8">
-          <div className="flex flex-col space-y-4 max-w-md mx-auto">
+          <form className="flex flex-col space-y-4 max-w-md mx-auto" onSubmit={handleSubmit}>
             <div className="flex justify-between items-center">
               <label className="font-medium">Name:</label>
               <input
@@ -85,26 +85,32 @@ function App() {
             </div>
             
             <button
-              onClick={handleSubmit}
-              className="bg-gray-200 hover:bg-gray-300 text-black font-medium py-2 rounded transition"
+              type="submit"
+              className="bg-gray-800 hover:bg-gray-900 text-white font-medium py-2 rounded transition"
             >
               POST
             </button>
-          </div>
+          </form>
         </div>
 
         {/* ユーザーリスト部分 */}
         <div className="space-y-3">
-          {users.map((user) => (
-            <div 
-              key={user.id}
-              className="bg-blue-100 p-4 rounded flex justify-center items-center"
-            >
-              <span className="text-gray-800 font-medium">
-                {user.name}, {user.age}
-              </span>
+          {users && users.length > 0 ? (
+            users.map((user) => (
+              <div 
+                key={user.id}
+                className="bg-blue-100 p-4 rounded flex justify-center items-center"
+              >
+                <span className="text-gray-800 font-medium">
+                  {user.name}, {user.age}
+                </span>
+              </div>
+            ))
+          ) : (
+            <div className="text-center text-gray-500">
+              ユーザーが登録されていません
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
