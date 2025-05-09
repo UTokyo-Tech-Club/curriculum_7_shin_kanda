@@ -24,7 +24,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
 	res := responseMessage{
-		Message: "Hello," + name + "!",
+		Message: "Hello," + name + "-san",
 	}
 	bytes, err := json.Marshal(res)
 	if err != nil {
