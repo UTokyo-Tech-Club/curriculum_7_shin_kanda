@@ -25,10 +25,11 @@ func init() {
 	}
 
 	mysqlUser := os.Getenv("MYSQL_USER")
-	mysqlUserPwd := os.Getenv("MYSQL_PASSWORD")
+	mysqlUserPwd := os.Getenv("MYSQL_PWD")
 	mysqlDatabase := os.Getenv("MYSQL_DATABASE")
+	connStr := fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/%s", mysqlUser, mysqlUserPwd, mysqlDatabase)
 
-	_db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(127.0.0.1:3306)/%s", mysqlUser, mysqlUserPwd, mysqlDatabase))
+	_db, err := sql.Open("mysql", connStr)
 	if err != nil {
 		log.Fatalf("fail: sql.Open, %v\n", err)
 	}
