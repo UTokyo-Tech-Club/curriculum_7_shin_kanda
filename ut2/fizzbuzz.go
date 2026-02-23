@@ -14,7 +14,7 @@ func FizzBuzz(numbers []int) []string {
 	for _, n := range numbers {
 		switch {
 		case isFizzBuzz(n):
-			result = append(result, jazz)
+			result = append(result, fizzbuzz)
 		case isJazz(n):
 			result = append(result, jazz)
 		case isFizz(n):
