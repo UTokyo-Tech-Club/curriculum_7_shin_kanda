@@ -31,3 +31,5 @@ func TestFizzBuzz(t *testing.T) {
 		})
 	}
 }
+
+//確認
